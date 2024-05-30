@@ -24,7 +24,7 @@ class DatasetRequest extends Request
     }
 
     /**
-     * @param class-string<Item>|null $dtoType
+     * @param  class-string<Item>|null  $dtoType
      */
     public static function getJson(Identifier $identifier, ?string $dtoType = null): self
     {
@@ -44,7 +44,7 @@ class DatasetRequest extends Request
     public function createDtoFromResponse(Response $response): array
     {
         return array_map(
-            fn(array $item) => is_null($this->option->dtoType) ? $item : $this->option->dtoType::fromArray($item),
+            fn (array $item) => is_null($this->option->dtoType) ? $item : $this->option->dtoType::fromArray($item),
             $response->json()
         );
     }

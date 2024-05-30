@@ -17,16 +17,16 @@ it('should return result for case', function (Identifier $identifier, array $exp
     ]],
 ]);
 
-
 it('should transform response to DTO', function () {
-    $objet = new class([]) implements Item {
+    $objet = new class([]) implements Item
+    {
         public function __construct(public array $state)
         {
         }
 
         public static function fromArray(array $state): static
         {
-            return new static($state);
+            return new self($state);
         }
     };
     $results = $this->apify->dataset()->getJson(Identifier::make('case-2'), $objet::class);

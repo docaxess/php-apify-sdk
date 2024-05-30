@@ -11,7 +11,7 @@ use Yanis\Apify\Dataset\Item\Item;
 readonly class DatasetOption implements \JsonSerializable
 {
     /**
-     * @param class-string<Item>|null $dtoType
+     * @param  class-string<Item>|null  $dtoType
      */
     public function __construct(
         public Identifier $identifier,
@@ -19,19 +19,22 @@ readonly class DatasetOption implements \JsonSerializable
         public Pagination $pagination,
         public ?string $dtoType = null,
     ) {
-        if ($dtoType !== null && !is_subclass_of($dtoType, Item::class)) {
-            throw new InvalidArgumentException("DTO type must implement " . Item::class);
+        // @phpstan-ignore-next-line
+        if ($dtoType !== null && ! is_subclass_of($dtoType, Item::class)) {
+            throw new InvalidArgumentException('DTO type must implement '.Item::class);
         }
     }
+
     /**
-     * @param class-string<Item>|null $dtoType
+     * @param  class-string<Item>|null  $dtoType
      */
     public static function fromId(Identifier $identifier, ?string $dtoType = null): self
     {
         return new self($identifier, FormatType::default(), Pagination::disabled(), $dtoType);
     }
+
     /**
-     * @param class-string<Item>|null $dtoType
+     * @param  class-string<Item>|null  $dtoType
      */
     public static function make(
         Identifier $identifier,

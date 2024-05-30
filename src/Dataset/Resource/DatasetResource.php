@@ -14,9 +14,8 @@ use Yanis\Apify\Dataset\Request\DatasetRequest;
 class DatasetResource extends BaseResource
 {
     /**
-     * @param Identifier $identifier
-     * @param class-string<Item>|null $dtoType
-     * @return array
+     * @param  class-string<Item>|null  $dtoType
+     *
      * @throws FatalRequestException
      * @throws RequestException
      */

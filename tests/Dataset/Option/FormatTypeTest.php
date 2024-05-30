@@ -19,7 +19,6 @@ it('should create from string', function (string $name, FormatType $expected) {
     ['rss', FormatType::RSS],
 ]);
 
-
 it('should throw an exception for unknown format type', function () {
     FormatType::fromString('unknown');
 })->throws(InvalidArgumentException::class, 'Unknown format type: unknown');
