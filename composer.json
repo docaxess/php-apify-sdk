@@ -1,0 +1,45 @@
+{
+    "name": "yanis/php-apify-sdk",
+    "description": "Unofficial SDK for Apify service",
+    "version": "0.0.1",
+    "type": "library",
+    "require": {
+        "saloonphp/saloon": "^3.8",
+        "php": ">=8.2",
+        "citco/carbon": "^2.0"
+    },
+    "require-dev": {
+        "pestphp/pest": "^2.34",
+        "phpstan/phpstan": "^1.11",
+        "laravel/pint": "^1.15",
+        "symfony/var-dumper": "^7.0"
+    },
+    "license": "apache-2.0",
+    "autoload": {
+        "psr-4": {
+            "Yanis\\Apify\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Yanis",
+            "email": "yanis.ghidouche@gmail.com"
+        }
+    ],
+    "scripts": {
+        "lint": "vendor/bin/pint",
+        "analyze": "vendor/bin/phpstan analyse --memory-limit=2G",
+        "test": "php -d memory_limit=-1 vendor/bin/pest --colors=auto --display-warnings tests",
+        "coverage": "php -d memory_limit=-1 vendor/bin/pest --colors=auto --coverage tests"
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    }
+}

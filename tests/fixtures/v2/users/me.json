@@ -1,0 +1,198 @@
+{
+  "data": {
+    "id": "QxexDwdgrlp",
+    "username": "john.doe",
+    "profile": {
+      "name": "John Doe",
+      "pictureUrl": "https://lh3.googleusercontent.com/a/ddddd-dddd-dddd=9vddd6-c"
+    },
+    "email": "john.doe@organisation.com",
+    "proxy": {
+      "password": "apify_proxy_pewkow234weklfewf0sdc",
+      "groups": [
+        {
+          "name": "BUYPROXIES1234",
+          "description": "Proxies from USA 2",
+          "availableCount": 27
+        },
+        {
+          "name": "GOOGLE_SERP",
+          "description": "Enables downloading of Google Search result pages",
+          "availableCount": 0
+        },
+        {
+          "name": "RESIDENTIAL",
+          "description": "Residential proxies",
+          "availableCount": 0
+        },
+        {
+          "name": "StaticUS3",
+          "description": "Static IPs - 1.2.3.4, 1.2.3.5, 1.2.3.6",
+          "availableCount": 3
+        }
+      ]
+    },
+    "plan": {
+      "id": "CUSTOM",
+      "description": "Plan designed for developers who use the Apify platform to build their own Actors.",
+      "isEnabled": true,
+      "monthlyBasePriceUsd": 1,
+      "monthlyUsageCreditsUsd": 1,
+      "usageDiscountPercent": 0,
+      "forceBillingInterval": "TWICE_A_YEAR",
+      "enabledPlatformFeatures": [
+        "ACTORS",
+        "STORAGE",
+        "SCHEDULER",
+        "WEBHOOKS",
+        "PROXY",
+        "PROXY_EXTERNAL_ACCESS",
+        "PROXY_RESIDENTIAL",
+        "PROXY_SERPS",
+        "ACTORS_PUBLIC_DEVELOPER"
+      ],
+      "maxActorMemoryGbytes": 32,
+      "apiRateLimitBoosts": 0,
+      "maxMonthlyUsageUsd": 85,
+      "maxMonthlyActorComputeUnits": 1999999,
+      "maxMonthlyResidentialProxyGbytes": 10,
+      "maxMonthlyProxySerps": 10000,
+      "maxMonthlyExternalDataTransferGbytes": 50,
+      "maxActorCount": 500,
+      "maxActorTaskCount": 5000,
+      "maxConcurrentActorRuns": 32,
+      "dataRetentionDays": 31,
+      "availableProxyGroups": {
+        "BUYPROXIES1234": 27,
+        "wefAEfssEFfxsf": 3
+      },
+      "teamAccountSeatCount": 999,
+      "supportLevel": "COMMUNITY",
+      "availableAddOns": [
+        "SHARED_DATACENTER_PROXIES",
+        "MAX_ACTOR_MEMORY_GBYTES",
+        "PRIORITY_SUPPORT",
+        "PERSONALIZED_SUPPORT_HOURS",
+        "MAX_CONCURRENT_ACTOR_RUNS"
+      ],
+      "planPricing": {
+        "chargeableServiceUnitPricesUsd": {
+          "ACTOR_COMPUTE_UNITS": 0.4,
+          "PROXY_RESIDENTIAL_TRANSFER_GBYTES": 13,
+          "PROXY_SERPS": 0.003,
+          "DATA_TRANSFER_INTERNAL_GBYTES": 0.05,
+          "DATA_TRANSFER_EXTERNAL_GBYTES": 0.2,
+          "DATASET_TIMED_STORAGE_GBYTE_HOURS": 0.001,
+          "DATASET_READS": 4e-7,
+          "DATASET_WRITES": 0.000005,
+          "KEY_VALUE_STORE_TIMED_STORAGE_GBYTE_HOURS": 0.001,
+          "KEY_VALUE_STORE_READS": 0.000005,
+          "KEY_VALUE_STORE_WRITES": 0.00005,
+          "KEY_VALUE_STORE_LISTS": 0.00005,
+          "REQUEST_QUEUE_TIMED_STORAGE_GBYTE_HOURS": 0.004,
+          "REQUEST_QUEUE_READS": 0.000004,
+          "REQUEST_QUEUE_WRITES": 0.00002,
+          "PAID_ACTORS_FLAT_PRICE_PER_MONTH": 1,
+          "PAID_ACTORS_PER_DATASET_ITEM": 1
+        },
+        "addOnMonthlyUnitPricesUsd": {
+          "SHARED_DATACENTER_PROXIES": 1,
+          "MAX_ACTOR_MEMORY_GBYTES": 2,
+          "TEAM_ACCOUNT_SEATS": 49,
+          "PRIORITY_SUPPORT": 100,
+          "ACCOUNT_MANAGER_SUPPORT": 100,
+          "API_RATE_LIMIT_BOOSTS": 300,
+          "PERSONALIZED_SUPPORT_HOURS": 200,
+          "MAX_CONCURRENT_ACTOR_RUNS": 5
+        },
+        "chargeableServicesVolumeDiscountTiers": {
+          "ACTOR_COMPUTE_UNITS": [
+            {
+              "quantityAbove": 0,
+              "discountPercent": 100
+            },
+            {
+              "quantityAbove": 100,
+              "discountPercent": 0
+            }
+          ]
+        }
+      }
+    },
+    "effectivePlatformFeatures": {
+      "ACTORS": {
+        "isEnabled": true,
+        "disabledReason": null,
+        "disabledReasonType": null,
+        "isTrial": false,
+        "trialExpirationAt": null
+      },
+      "STORAGE": {
+        "isEnabled": true,
+        "disabledReason": null,
+        "disabledReasonType": null,
+        "isTrial": false,
+        "trialExpirationAt": null
+      },
+      "SCHEDULER": {
+        "isEnabled": true,
+        "disabledReason": null,
+        "disabledReasonType": null,
+        "isTrial": false,
+        "trialExpirationAt": null
+      },
+      "PROXY": {
+        "isEnabled": true,
+        "disabledReason": null,
+        "disabledReasonType": null,
+        "isTrial": false,
+        "trialExpirationAt": null
+      },
+      "PROXY_EXTERNAL_ACCESS": {
+        "isEnabled": true,
+        "disabledReason": null,
+        "disabledReasonType": null,
+        "isTrial": false,
+        "trialExpirationAt": null
+      },
+      "PROXY_RESIDENTIAL": {
+        "isEnabled": true,
+        "disabledReason": null,
+        "disabledReasonType": null,
+        "isTrial": false,
+        "trialExpirationAt": null
+      },
+      "PROXY_SERPS": {
+        "isEnabled": true,
+        "disabledReason": null,
+        "disabledReasonType": null,
+        "isTrial": false,
+        "trialExpirationAt": null
+      },
+      "WEBHOOKS": {
+        "isEnabled": true,
+        "disabledReason": null,
+        "disabledReasonType": null,
+        "isTrial": false,
+        "trialExpirationAt": null
+      },
+      "ACTORS_PUBLIC_ALL": {
+        "isEnabled": false,
+        "disabledReason": "The \"All public Actors\" feature is not enabled for your account. Please upgrade your plan or contact support@apify.com",
+        "disabledReasonType": "DISABLED",
+        "isTrial": false,
+        "trialExpirationAt": null
+      },
+      "ACTORS_PUBLIC_DEVELOPER": {
+        "isEnabled": true,
+        "disabledReason": null,
+        "disabledReasonType": null,
+        "isTrial": false,
+        "trialExpirationAt": null
+      }
+    },
+    "createdAt": "2023-08-04T08:40:28.378Z",
+    "isPaying": true,
+    "organizationOwnerUserId": "xxxxxxxx"
+  }
+}

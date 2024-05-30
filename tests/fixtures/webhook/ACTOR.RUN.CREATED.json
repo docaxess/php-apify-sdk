@@ -1,0 +1,69 @@
+{
+  "userId": "aaa",
+  "createdAt": "2024-05-22T12:44:25.952Z",
+  "eventType": "ACTOR.RUN.CREATED",
+  "eventData": {
+    "actorId": "bbbb",
+    "actorRunId": "cccc"
+  },
+  "resource": {
+    "id": "cccc",
+    "actId": "eeee",
+    "userId": "bbbb",
+    "startedAt": "2024-05-22T12:44:19.811Z",
+    "finishedAt": null,
+    "status": "RUNNING",
+    "meta": {
+      "origin": "API",
+      "userAgent": "Yanis/ApifyConnector"
+    },
+    "stats": {
+      "inputBodyLen": 122,
+      "rebootCount": 0,
+      "restartCount": 0,
+      "resurrectCount": 0,
+      "computeUnits": 0
+    },
+    "options": {
+      "build": "latest",
+      "timeoutSecs": 14400,
+      "memoryMbytes": 2048,
+      "diskMbytes": 4096
+    },
+    "buildId": "eeee",
+    "defaultKeyValueStoreId": "ffff",
+    "defaultDatasetId": "ggggg",
+    "defaultRequestQueueId": "hhhhhh",
+    "buildNumber": "0.0.0",
+    "containerUrl": "https://xxxx.runs.apify.net",
+    "usage": {
+      "ACTOR_COMPUTE_UNITS": 0,
+      "DATASET_READS": 0,
+      "DATASET_WRITES": 0,
+      "KEY_VALUE_STORE_READS": 0,
+      "KEY_VALUE_STORE_WRITES": 1,
+      "KEY_VALUE_STORE_LISTS": 0,
+      "REQUEST_QUEUE_READS": 0,
+      "REQUEST_QUEUE_WRITES": 0,
+      "DATA_TRANSFER_INTERNAL_GBYTES": 0,
+      "DATA_TRANSFER_EXTERNAL_GBYTES": 0,
+      "PROXY_RESIDENTIAL_TRANSFER_GBYTES": 0,
+      "PROXY_SERPS": 0
+    },
+    "usageTotalUsd": 0.00005,
+    "usageUsd": {
+      "ACTOR_COMPUTE_UNITS": 0,
+      "DATASET_READS": 0,
+      "DATASET_WRITES": 0,
+      "KEY_VALUE_STORE_READS": 0,
+      "KEY_VALUE_STORE_WRITES": 0.00005,
+      "KEY_VALUE_STORE_LISTS": 0,
+      "REQUEST_QUEUE_READS": 0,
+      "REQUEST_QUEUE_WRITES": 0,
+      "DATA_TRANSFER_INTERNAL_GBYTES": 0,
+      "DATA_TRANSFER_EXTERNAL_GBYTES": 0,
+      "PROXY_RESIDENTIAL_TRANSFER_GBYTES": 0,
+      "PROXY_SERPS": 0
+    }
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "userId": "aaa",
+  "createdAt": "2024-05-22T12:50:25.346Z",
+  "eventType": "ACTOR.RUN.SUCCEEDED",
+  "eventData": {
+    "actorId": "bbbb",
+    "actorRunId": "cccc"
+  },
+  "resource": {
+    "id": "cccc",
+    "actId": "eeee",
+    "userId": "bbbb",
+    "startedAt": "2024-05-22T12:44:19.811Z",
+    "finishedAt": "2024-05-22T12:50:19.059Z",
+    "status": "SUCCEEDED",
+    "statusMessage": "Finished! Total xxx requests: xxx succeeded, 0 failed.",
+    "isStatusMessageTerminal": true,
+    "meta": {
+      "origin": "API",
+      "userAgent": "Yanis/ApifyConnector"
+    },
+    "stats": {
+      "inputBodyLen": 122,
+      "rebootCount": 0,
+      "restartCount": 0,
+      "durationMillis": 359121,
+      "resurrectCount": 0,
+      "runTimeSecs": 359.121,
+      "metamorph": 0,
+      "computeUnits": 0.19951166666666667,
+      "memAvgBytes": 524759566.621435,
+      "memMaxBytes": 731590656,
+      "memCurrentBytes": 0,
+      "cpuAvgUsage": 43.18367919762225,
+      "cpuMaxUsage": 224.56555555555556,
+      "cpuCurrentUsage": 0,
+      "netRxBytes": 96114668,
+      "netTxBytes": 3231648
+    },
+    "options": {
+      "build": "latest",
+      "timeoutSecs": 14400,
+      "memoryMbytes": 2048,
+      "diskMbytes": 4096
+    },
+    "buildId": "eeee",
+    "exitCode": 0,
+    "defaultKeyValueStoreId": "ffff",
+    "defaultDatasetId": "ggggg",
+    "defaultRequestQueueId": "hhhhhh",
+    "buildNumber": "0.0.0",
+    "containerUrl": "https://xxxx.runs.apify.net",
+    "usage": {
+      "ACTOR_COMPUTE_UNITS": 0.19951166666666667,
+      "DATASET_READS": 0,
+      "DATASET_WRITES": 0,
+      "KEY_VALUE_STORE_READS": 2,
+      "KEY_VALUE_STORE_WRITES": 15,
+      "KEY_VALUE_STORE_LISTS": 0,
+      "REQUEST_QUEUE_READS": 190,
+      "REQUEST_QUEUE_WRITES": 270,
+      "DATA_TRANSFER_INTERNAL_GBYTES": 0.0006956523284316063,
+      "DATA_TRANSFER_EXTERNAL_GBYTES": 0.0027877027168869972,
+      "PROXY_RESIDENTIAL_TRANSFER_GBYTES": 0,
+      "PROXY_SERPS": 0
+    },
+    "usageTotalUsd": 0.08731698982646564,
+    "usageUsd": {
+      "ACTOR_COMPUTE_UNITS": 0.07980466666666668,
+      "DATASET_READS": 0,
+      "DATASET_WRITES": 0,
+      "KEY_VALUE_STORE_READS": 0.00001,
+      "KEY_VALUE_STORE_WRITES": 0.00075,
+      "KEY_VALUE_STORE_LISTS": 0,
+      "REQUEST_QUEUE_READS": 0.0007599999999999999,
+      "REQUEST_QUEUE_WRITES": 0.0054,
+      "DATA_TRANSFER_INTERNAL_GBYTES": 0.00003478261642158032,
+      "DATA_TRANSFER_EXTERNAL_GBYTES": 0.0005575405433773994,
+      "PROXY_RESIDENTIAL_TRANSFER_GBYTES": 0,
+      "PROXY_SERPS": 0
+    }
+  }
+}
