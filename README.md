@@ -1,7 +1,7 @@
 # Apify SDK for PHP
 
 [![Latest Version](http://img.shields.io/packagist/v/docaxess/php-apify-sdk.svg?label=Release&style=for-the-badge)](https://packagist.org/packages/docaxess/php-apify-sdk)
-[![CC-BY-1.0 License](https://img.shields.io/github/license/Astrotomic/laravel-imgix.svg?label=License&color=blue&style=for-the-badge)](https://github.com/docaxess/php-apify-sdk/blob/main/LICENSE)
+[![CC-BY-1.0 License](https://img.shields.io/github/license/docaxess/php-apify-sdk.svg?label=License&color=blue&style=for-the-badge)](https://github.com/docaxess/php-apify-sdk/blob/main/LICENSE)
 [![CI Testing](https://img.shields.io/github/actions/workflow/status/docaxess/php-apify-sdk/test.yml?branch=main&style=flat-square&logoColor=white&logo=github&label=Testing)](https://github.com/docaxess/php-apify-sdk/actions)
 
 
