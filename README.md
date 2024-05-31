@@ -8,7 +8,7 @@
 ## Installation
 
 ```bash
-composer require yanis/php-apify-sdk
+composer require docaxess/php-apify-sdk
 ```
 
 ## Token generation
