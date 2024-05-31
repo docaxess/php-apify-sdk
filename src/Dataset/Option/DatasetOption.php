@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Yanis\Apify\Dataset\Option;
+namespace DocAxess\Apify\Dataset\Option;
 
 use InvalidArgumentException;
-use Yanis\Apify\Core\Type\Identifier;
-use Yanis\Apify\Dataset\Item\Item;
+use DocAxess\Apify\Core\Type\Identifier;
+use DocAxess\Apify\Dataset\Item\Item;
 
 readonly class DatasetOption implements \JsonSerializable
 {

@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-use Yanis\Apify\User\Data\Proxy\Group;
-use Yanis\Apify\User\Data\Proxy\Proxy;
-use Yanis\Apify\User\Data\User;
+use DocAxess\Apify\User\Data\Proxy\Group;
+use DocAxess\Apify\User\Data\Proxy\Proxy;
+use DocAxess\Apify\User\Data\User;
 
 it('should return the current user', function () {
     $user = $this->apify->user()->me();

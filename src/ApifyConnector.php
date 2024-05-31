@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Yanis\Apify;
+namespace DocAxess\Apify;
 
 use Saloon\Http\Auth\TokenAuthenticator;
 use Saloon\Http\Connector;
-use Yanis\Apify\Dataset\Resource\DatasetResource;
-use Yanis\Apify\Task\Resource\TaskRunnerResource;
-use Yanis\Apify\User\Resource\UserResource;
+use DocAxess\Apify\Dataset\Resource\DatasetResource;
+use DocAxess\Apify\Task\Resource\TaskRunnerResource;
+use DocAxess\Apify\User\Resource\UserResource;
 
 class ApifyConnector extends Connector
 {

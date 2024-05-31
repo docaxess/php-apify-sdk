@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-use Yanis\Apify\Webhook\Event\EventType;
+use DocAxess\Apify\Webhook\Event\EventType;
 
 dataset('eventType', [
     [EventType::BUILD_CREATED, 'ACTOR.BUILD.CREATED'],

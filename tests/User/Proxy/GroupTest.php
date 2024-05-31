@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-use Yanis\Apify\User\Data\Proxy\Group;
+use DocAxess\Apify\User\Data\Proxy\Group;
 
 it('should create group', function () {
     $group = new Group('name', 'description', 0);

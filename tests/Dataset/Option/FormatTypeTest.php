@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-use Yanis\Apify\Dataset\Option\FormatType;
+use DocAxess\Apify\Dataset\Option\FormatType;
 
 it('should return the default format type', fn () => expect(FormatType::default())->toBe(FormatType::JSON));
 

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Yanis\Apify\Webhook\Event;
+namespace DocAxess\Apify\Webhook\Event;
 
 use InvalidArgumentException;
 

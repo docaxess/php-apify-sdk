@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Yanis\Apify\User\Data\Proxy;
+namespace DocAxess\Apify\User\Data\Proxy;
 
 readonly class Proxy
 {

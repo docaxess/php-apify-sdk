@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Yanis\Apify\Dataset\Option;
+namespace DocAxess\Apify\Dataset\Option;
 
 readonly class Pagination implements \JsonSerializable
 {

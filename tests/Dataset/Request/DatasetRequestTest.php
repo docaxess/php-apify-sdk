@@ -2,8 +2,8 @@
 
 declare(strict_types=1);
 
-use Yanis\Apify\Core\Type\Identifier;
-use Yanis\Apify\Dataset\Item\Item;
+use DocAxess\Apify\Core\Type\Identifier;
+use DocAxess\Apify\Dataset\Item\Item;
 
 it('should return result for case', function (Identifier $identifier, array $expected) {
     $response = $this->apify->dataset()->getJson($identifier);

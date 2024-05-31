@@ -1,7 +1,7 @@
 {
-    "name": "yanis/php-apify-sdk",
+    "name": "docaxess/php-apify-sdk",
     "description": "Unofficial SDK for Apify service",
-    "version": "0.0.1",
+    "version": "0.1.1",
     "type": "library",
     "require": {
         "saloonphp/saloon": "^3.8",
@@ -14,10 +14,10 @@
         "laravel/pint": "^1.15",
         "symfony/var-dumper": "^7.0"
     },
-    "license": "apache-2.0",
+    "license": "creative commons",
     "autoload": {
         "psr-4": {
-            "Yanis\\Apify\\": "src/"
+            "DocAxess\\Apify\\": "src/"
         }
     },
     "autoload-dev": {

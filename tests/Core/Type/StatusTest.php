@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-use Yanis\Apify\Core\Type\Status;
+use DocAxess\Apify\Core\Type\Status;
 
 dataset('status', [
     [Status::READY, 'READY'],

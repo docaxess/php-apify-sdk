@@ -11,7 +11,7 @@ use Saloon\Http\Faking\MockClient;
 use Saloon\Http\Faking\MockResponse;
 use Saloon\Http\PendingRequest;
 use Throwable;
-use Yanis\Apify\ApifyConnector;
+use DocAxess\Apify\ApifyConnector;
 
 class TestCase extends \PHPUnit\Framework\TestCase
 {

@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Yanis\Apify\User\Resource;
+namespace DocAxess\Apify\User\Resource;
 
 use Saloon\Http\BaseResource;
-use Yanis\Apify\User\Data\User;
-use Yanis\Apify\User\Request\MeRequest;
+use DocAxess\Apify\User\Data\User;
+use DocAxess\Apify\User\Request\MeRequest;
 
 class UserResource extends BaseResource
 {

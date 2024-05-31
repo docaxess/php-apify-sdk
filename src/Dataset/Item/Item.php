@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Yanis\Apify\Dataset\Item;
+namespace DocAxess\Apify\Dataset\Item;
 
 interface Item
 {

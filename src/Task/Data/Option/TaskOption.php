@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Yanis\Apify\Task\Data\Option;
+namespace DocAxess\Apify\Task\Data\Option;
 
 use Stringable;
-use Yanis\Apify\Webhook\Config\WebhookConfig;
+use DocAxess\Apify\Webhook\Config\WebhookConfig;
 
 readonly class TaskOption implements Stringable
 {

@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Yanis\Apify\User\Data;
+namespace DocAxess\Apify\User\Data;
 
-use Yanis\Apify\User\Data\Proxy\Proxy;
+use DocAxess\Apify\User\Data\Proxy\Proxy;
 
 readonly class User
 {

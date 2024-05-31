@@ -1,9 +1,9 @@
 <?php
 
-use Yanis\Apify\Core\Type\Identifier;
-use Yanis\Apify\Dataset\Option\DatasetOption;
-use Yanis\Apify\Dataset\Option\FormatType;
-use Yanis\Apify\Dataset\Option\Pagination;
+use DocAxess\Apify\Core\Type\Identifier;
+use DocAxess\Apify\Dataset\Option\DatasetOption;
+use DocAxess\Apify\Dataset\Option\FormatType;
+use DocAxess\Apify\Dataset\Option\Pagination;
 
 it('should create a dataset option with default values', function () {
     $identifier = Identifier::make('my-dataset');

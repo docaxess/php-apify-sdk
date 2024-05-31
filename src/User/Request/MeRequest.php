@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Yanis\Apify\User\Request;
+namespace DocAxess\Apify\User\Request;
 
 use Saloon\Enums\Method;
 use Saloon\Http\Request;
 use Saloon\Http\Response;
 use Saloon\Traits\Request\CreatesDtoFromResponse;
-use Yanis\Apify\User\Data\User;
+use DocAxess\Apify\User\Data\User;
 
 class MeRequest extends Request
 {

@@ -3,7 +3,7 @@
 declare(strict_types=1);
 
 use Carbon\CarbonImmutable;
-use Yanis\Apify\Webhook\Data\Moment\When;
+use DocAxess\Apify\Webhook\Data\Moment\When;
 
 $now = CarbonImmutable::now();
 

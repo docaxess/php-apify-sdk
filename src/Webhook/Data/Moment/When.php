@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Yanis\Apify\Webhook\Data\Moment;
+namespace DocAxess\Apify\Webhook\Data\Moment;
 
 use Carbon\CarbonImmutable;
 

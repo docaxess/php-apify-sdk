@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-use Yanis\Apify\User\Data\Proxy\Proxy;
+use DocAxess\Apify\User\Data\Proxy\Proxy;
 
 dataset('proxy', [
     [

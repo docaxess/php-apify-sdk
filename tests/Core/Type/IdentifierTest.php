@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-use Yanis\Apify\Core\Type\Identifier;
+use DocAxess\Apify\Core\Type\Identifier;
 
 it('should create an identifier', function () {
     $identifier = new Identifier('identifier');

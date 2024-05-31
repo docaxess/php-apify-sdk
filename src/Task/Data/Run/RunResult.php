@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Yanis\Apify\Task\Data\Run;
+namespace DocAxess\Apify\Task\Data\Run;
 
-use Yanis\Apify\Core\Type\Status;
+use DocAxess\Apify\Core\Type\Status;
 
 readonly class RunResult
 {

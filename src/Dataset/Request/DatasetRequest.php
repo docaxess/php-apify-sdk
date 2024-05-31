@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Yanis\Apify\Dataset\Request;
+namespace DocAxess\Apify\Dataset\Request;
 
 use Saloon\Enums\Method;
 use Saloon\Http\Request;
 use Saloon\Http\Response;
 use Saloon\Traits\Request\CreatesDtoFromResponse;
-use Yanis\Apify\Core\Type\Identifier;
-use Yanis\Apify\Dataset\Item\Item;
-use Yanis\Apify\Dataset\Option\DatasetOption;
+use DocAxess\Apify\Core\Type\Identifier;
+use DocAxess\Apify\Dataset\Item\Item;
+use DocAxess\Apify\Dataset\Option\DatasetOption;
 
 class DatasetRequest extends Request
 {

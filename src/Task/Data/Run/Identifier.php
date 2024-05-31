@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Yanis\Apify\Task\Data\Run;
+namespace DocAxess\Apify\Task\Data\Run;
 
-use Yanis\Apify\Core\Type\Identifier as AtomicIdentifier;
+use DocAxess\Apify\Core\Type\Identifier as AtomicIdentifier;
 
 readonly class Identifier
 {

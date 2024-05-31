@@ -2,8 +2,8 @@
 
 declare(strict_types=1);
 
-use Yanis\Apify\Webhook\Config\WebhookConfig;
-use Yanis\Apify\Webhook\Event\EventType;
+use DocAxess\Apify\Webhook\Config\WebhookConfig;
+use DocAxess\Apify\Webhook\Event\EventType;
 
 it('should create config', function () {
     $config = new WebhookConfig([EventType::RUN_SUCCEEDED, EventType::RUN_CREATED], 'https://example.com');

@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Yanis\Apify\Task\Resource;
+namespace DocAxess\Apify\Task\Resource;
 
 use JsonSerializable;
 use Saloon\Http\BaseResource;
-use Yanis\Apify\Task\Data\Option\TaskOption;
-use Yanis\Apify\Task\Data\Run\RunResult;
-use Yanis\Apify\Task\Request\TaskRunRequest;
+use DocAxess\Apify\Task\Data\Option\TaskOption;
+use DocAxess\Apify\Task\Data\Run\RunResult;
+use DocAxess\Apify\Task\Request\TaskRunRequest;
 
 class TaskRunnerResource extends BaseResource
 {

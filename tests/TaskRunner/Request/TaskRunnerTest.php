@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-use Yanis\Apify\Core\Type\Status;
-use Yanis\Apify\Task\Data\Run\Identifier;
-use Yanis\Apify\Task\Data\Run\RunResult;
+use DocAxess\Apify\Core\Type\Status;
+use DocAxess\Apify\Task\Data\Run\Identifier;
+use DocAxess\Apify\Task\Data\Run\RunResult;
 
 it('should run a new task', function () {
     $taskRunner = $this->apify->taskRunner()->run('foo');

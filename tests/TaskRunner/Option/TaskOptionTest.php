@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-use Yanis\Apify\Task\Data\Option\TaskOption;
-use Yanis\Apify\Webhook\Config\WebhookConfig;
-use Yanis\Apify\Webhook\Event\EventType;
+use DocAxess\Apify\Task\Data\Option\TaskOption;
+use DocAxess\Apify\Webhook\Config\WebhookConfig;
+use DocAxess\Apify\Webhook\Event\EventType;
 
 it('should create a task option with default values', function () {
     $option = TaskOption::make();

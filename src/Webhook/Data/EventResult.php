@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Yanis\Apify\Webhook\Data;
+namespace DocAxess\Apify\Webhook\Data;
 
 use Carbon\CarbonImmutable;
-use Yanis\Apify\Core\Type\Identifier;
-use Yanis\Apify\Core\Type\Status;
-use Yanis\Apify\Webhook\Data\Moment\When;
-use Yanis\Apify\Webhook\Event\EventType;
+use DocAxess\Apify\Core\Type\Identifier;
+use DocAxess\Apify\Core\Type\Status;
+use DocAxess\Apify\Webhook\Data\Moment\When;
+use DocAxess\Apify\Webhook\Event\EventType;
 
 readonly class EventResult
 {

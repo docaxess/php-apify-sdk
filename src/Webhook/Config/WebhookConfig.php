@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Yanis\Apify\Webhook\Config;
+namespace DocAxess\Apify\Webhook\Config;
 
-use Yanis\Apify\Webhook\Event\EventType;
+use DocAxess\Apify\Webhook\Event\EventType;
 
 readonly class WebhookConfig implements \JsonSerializable
 {

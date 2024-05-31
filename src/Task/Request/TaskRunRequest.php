@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Yanis\Apify\Task\Request;
+namespace DocAxess\Apify\Task\Request;
 
 use JsonSerializable;
 use Saloon\Contracts\Body\HasBody;
@@ -11,8 +11,8 @@ use Saloon\Http\Request;
 use Saloon\Http\Response;
 use Saloon\Traits\Body\HasJsonBody;
 use Saloon\Traits\Request\CreatesDtoFromResponse;
-use Yanis\Apify\Task\Data\Option\TaskOption;
-use Yanis\Apify\Task\Data\Run\RunResult;
+use DocAxess\Apify\Task\Data\Option\TaskOption;
+use DocAxess\Apify\Task\Data\Run\RunResult;
 
 class TaskRunRequest extends Request implements HasBody
 {

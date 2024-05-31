@@ -22,7 +22,7 @@ You can find more detail on the [Apify Documentation](https://docs.apify.com/pla
 
 First you need to create a new instance of the ApifyConnector class and pass your token as a parameter.
 ```php
-use Yanis\Apify\ApifyConnector;
+use DocAxess\Apify\ApifyConnector;
 
 $apify = new ApifyConnector('YOUR_APIFY_TOKEN');
 ```
@@ -36,8 +36,8 @@ $user = $apify->user()->me();
 
 ### Start a new actor run
 ```php
-use Yanis\Apify\ApifyConnector;
-use Yanis\Apify\Task\Data\Option\TaskOption;
+use DocAxess\Apify\ApifyConnector;
+use DocAxess\Apify\Task\Data\Option\TaskOption;
 
 // The ID of the actor you want to run, it can be found in the actor's URL
 // or you can use the slug like 'yanis~actor-name'
@@ -58,10 +58,10 @@ $run = $apify->taskRunner()->run($actorId, $config, [
 
 ### Add a webhook to an actor
 ```php
-use Yanis\Apify\ApifyConnector;
-use Yanis\Apify\Task\Data\Option\TaskOption;
-use Yanis\Apify\Webhook\Config\WebhookConfig;
-use Yanis\Apify\Webhook\Event\EventType;
+use DocAxess\Apify\ApifyConnector;
+use DocAxess\Apify\Task\Data\Option\TaskOption;
+use DocAxess\Apify\Webhook\Config\WebhookConfig;
+use DocAxess\Apify\Webhook\Event\EventType;
 
 $actorId = 'YOUR_ACTOR_ID'; 
 $apify = new ApifyConnector('YOUR_APIFY_TOKEN');
@@ -75,16 +75,16 @@ $run = $apify->taskRunner()->run($actorId, $config);
 Webhook events detail can be parsed with the provided object.
 
 ```php
-use Yanis\Apify\Webhook\Data\EventResult;
+use DocAxess\Apify\Webhook\Data\EventResult;
 
 $eventResult = EventResult::fromArray(request()->all());
 ```
 
 ### Get Dataset
 ```php
-use Yanis\Apify\ApifyConnector;
-use Yanis\Apify\Webhook\Data\EventResult;
-use Yanis\Apify\Core\Type\Identifier;
+use DocAxess\Apify\ApifyConnector;
+use DocAxess\Apify\Webhook\Data\EventResult;
+use DocAxess\Apify\Core\Type\Identifier;
 
 $eventResult = EventResult::fromArray(request()->all());
 
@@ -96,11 +96,11 @@ $results = $apify->dataset()->getJson(Identifier::make('YOUR_DATASET_ID'));
 ```
 
 By default, the dataset will return associative array, but you can also give the DTO class to return for each item.
-It should implement the `Yanis\Apify\Dataset\Item\Item` interface.
+It should implement the `DocAxess\Apify\Dataset\Item\Item` interface.
 ```php
-use Yanis\Apify\ApifyConnector;
-use Yanis\Apify\Webhook\Data\EventResult;
-use Yanis\Apify\Core\Type\Identifier;
+use DocAxess\Apify\ApifyConnector;
+use DocAxess\Apify\Webhook\Data\EventResult;
+use DocAxess\Apify\Core\Type\Identifier;
 
 $apify = new ApifyConnector('YOUR_APIFY_TOKEN');
 $results = $apify->dataset()->getJson(Identifier::make('YOUR_DATASET_ID'), YourDtoForItem::class);

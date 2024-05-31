@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Yanis\Apify\Core\Type;
+namespace DocAxess\Apify\Core\Type;
 
 use InvalidArgumentException;
 
