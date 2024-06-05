@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace DocAxess\Apify\Task\Data\Option;
 
-use Stringable;
 use DocAxess\Apify\Webhook\Config\WebhookConfig;
+use Stringable;
 
 readonly class TaskOption implements Stringable
 {

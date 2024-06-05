@@ -4,13 +4,13 @@ declare(strict_types=1);
 
 namespace DocAxess\Apify\Dataset\Request;
 
+use DocAxess\Apify\Core\Type\Identifier;
+use DocAxess\Apify\Dataset\Item\Item;
+use DocAxess\Apify\Dataset\Option\DatasetOption;
 use Saloon\Enums\Method;
 use Saloon\Http\Request;
 use Saloon\Http\Response;
 use Saloon\Traits\Request\CreatesDtoFromResponse;
-use DocAxess\Apify\Core\Type\Identifier;
-use DocAxess\Apify\Dataset\Item\Item;
-use DocAxess\Apify\Dataset\Option\DatasetOption;
 
 class DatasetRequest extends Request
 {

@@ -27,4 +27,9 @@ readonly class RunResult
             status: Status::fromString($result['status'] ?? '')
         );
     }
+
+    public function isSuccess(): bool
+    {
+        return true;
+    }
 }

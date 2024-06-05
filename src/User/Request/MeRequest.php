@@ -4,11 +4,11 @@ declare(strict_types=1);
 
 namespace DocAxess\Apify\User\Request;
 
+use DocAxess\Apify\User\Data\User;
 use Saloon\Enums\Method;
 use Saloon\Http\Request;
 use Saloon\Http\Response;
 use Saloon\Traits\Request\CreatesDtoFromResponse;
-use DocAxess\Apify\User\Data\User;
 
 class MeRequest extends Request
 {

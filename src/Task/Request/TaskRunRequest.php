@@ -4,6 +4,9 @@ declare(strict_types=1);
 
 namespace DocAxess\Apify\Task\Request;
 
+use DocAxess\Apify\Core\ErrorResult;
+use DocAxess\Apify\Task\Data\Option\TaskOption;
+use DocAxess\Apify\Task\Data\Run\RunResult;
 use JsonSerializable;
 use Saloon\Contracts\Body\HasBody;
 use Saloon\Enums\Method;
@@ -11,8 +14,6 @@ use Saloon\Http\Request;
 use Saloon\Http\Response;
 use Saloon\Traits\Body\HasJsonBody;
 use Saloon\Traits\Request\CreatesDtoFromResponse;
-use DocAxess\Apify\Task\Data\Option\TaskOption;
-use DocAxess\Apify\Task\Data\Run\RunResult;
 
 class TaskRunRequest extends Request implements HasBody
 {
@@ -45,8 +46,12 @@ class TaskRunRequest extends Request implements HasBody
         return sprintf('acts/%s/runs', $this->actorTaskId);
     }
 
-    public function createDtoFromResponse(Response $response): mixed
+    public function createDtoFromResponse(Response $response): ErrorResult|RunResult
     {
+        if ($response->status() > 299) {
+            return ErrorResult::make($response->status(), $response->json());
+        }
+
         return RunResult::make($response->json());
     }
 }

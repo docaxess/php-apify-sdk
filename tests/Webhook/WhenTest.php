@@ -51,5 +51,5 @@ it('should calculate execution time in seconds', function () use ($now) {
     $startedAt = $now;
     $finishedAt = $now->addSeconds(10);
     $when = When::make($startedAt, $finishedAt);
-    expect($when->executionTimeInSeconds())->toBe(10);
+    expect($when->executionTimeInSeconds())->toBe(10.);
 });

@@ -34,3 +34,21 @@ it('should serialize to json', function (WebhookConfig $config, string $expected
 it('should throw exception for invalid event type', function () {
     new WebhookConfig(['invalid'], 'https://example.com');
 })->throws(AssertionError::class);
+
+it('should add header token', function (WebhookConfig $config, string $expected) {
+    expect(json_encode($config->addBearerToken('token')))->toBe($expected);
+})->with([
+    [
+        new WebhookConfig([EventType::RUN_SUCCEEDED], 'https://example.com'),
+        '{"eventTypes":["ACTOR.RUN.SUCCEEDED"],"requestUrl":"https:\/\/example.com","headersTemplate":"{\"Authorization\":\"Bearer token\"}"}',
+    ],
+]);
+
+it('should add header', function (WebhookConfig $config, string $expected) {
+    expect(json_encode($config->addHeader('key', 'value')))->toBe($expected);
+})->with([
+    [
+        new WebhookConfig([EventType::RUN_SUCCEEDED], 'https://example.com'),
+        '{"eventTypes":["ACTOR.RUN.SUCCEEDED"],"requestUrl":"https:\/\/example.com","headersTemplate":"{\"key\":\"value\"}"}',
+    ],
+]);

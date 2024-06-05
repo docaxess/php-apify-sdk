@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace DocAxess\Apify\Dataset\Option;
 
-use InvalidArgumentException;
 use DocAxess\Apify\Core\Type\Identifier;
 use DocAxess\Apify\Dataset\Item\Item;
+use InvalidArgumentException;
 
 readonly class DatasetOption implements \JsonSerializable
 {

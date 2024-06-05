@@ -40,7 +40,7 @@ class When
         return $this->finishedAt === null;
     }
 
-    public function executionTimeInSeconds(): int
+    public function executionTimeInSeconds(): float
     {
         return $this->startedAt->diffInSeconds($this->finishedAt ?? CarbonImmutable::now());
     }

@@ -4,11 +4,11 @@ declare(strict_types=1);
 
 namespace DocAxess\Apify;
 
-use Saloon\Http\Auth\TokenAuthenticator;
-use Saloon\Http\Connector;
 use DocAxess\Apify\Dataset\Resource\DatasetResource;
 use DocAxess\Apify\Task\Resource\TaskRunnerResource;
 use DocAxess\Apify\User\Resource\UserResource;
+use Saloon\Http\Auth\TokenAuthenticator;
+use Saloon\Http\Connector;
 
 class ApifyConnector extends Connector
 {

@@ -1,12 +1,12 @@
 {
     "name": "docaxess/php-apify-sdk",
     "description": "Unofficial SDK for Apify service",
-    "version": "0.3.0",
+    "version": "0.4.0",
     "type": "library",
     "require": {
         "saloonphp/saloon": "^3.8",
         "php": ">=8.2",
-        "citco/carbon": "^2.0"
+        "citco/carbon": "^3.0"
     },
     "require-dev": {
         "pestphp/pest": "^2.34",
