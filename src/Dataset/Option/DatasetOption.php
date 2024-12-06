@@ -19,7 +19,6 @@ readonly class DatasetOption implements \JsonSerializable
         public Pagination $pagination,
         public ?string $dtoType = null,
     ) {
-        // @phpstan-ignore-next-line
         if ($dtoType !== null && ! is_subclass_of($dtoType, Item::class)) {
             throw new InvalidArgumentException('DTO type must implement '.Item::class);
         }

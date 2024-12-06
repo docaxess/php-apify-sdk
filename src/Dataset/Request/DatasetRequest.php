@@ -18,10 +18,7 @@ class DatasetRequest extends Request
 
     protected Method $method = Method::GET;
 
-    public function __construct(public readonly DatasetOption $option)
-    {
-
-    }
+    public function __construct(public readonly DatasetOption $option) {}
 
     /**
      * @param  class-string<Item>|null  $dtoType

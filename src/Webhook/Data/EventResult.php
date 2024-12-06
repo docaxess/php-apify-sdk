@@ -21,8 +21,7 @@ readonly class EventResult
         public EventType $eventType,
         public Status $status,
         public When $when,
-    ) {
-    }
+    ) {}
 
     public static function fromArray(array $state): self
     {

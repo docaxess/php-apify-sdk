@@ -21,7 +21,7 @@ it('should create when from array', function (array $payload) use ($now) {
         ->and((string) $when->finishedAt)->toBe((string) $now);
 })->with([
     [['startedAt' => $now->toIso8601String(), 'finishedAt' => $now->toIso8601String()]],
-    ['resource' => ['startedAt' => $now->toIso8601String(), 'finishedAt' => $now->toIso8601String()]],
+    [['startedAt' => $now->toIso8601String(), 'finishedAt' => $now->toIso8601String()]],
 ]);
 
 it('should create when from array without finishedAt', function (array $payload) use ($now) {
@@ -31,7 +31,7 @@ it('should create when from array without finishedAt', function (array $payload)
         ->and($when->finishedAt)->toBeNull();
 })->with([
     [['startedAt' => $now->toIso8601String()]],
-    ['resource' => ['startedAt' => $now->toIso8601String()]],
+    [['startedAt' => $now->toIso8601String()]],
 ]);
 
 it('should check if when is finished', function () use ($now) {

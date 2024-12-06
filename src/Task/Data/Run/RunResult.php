@@ -11,9 +11,7 @@ readonly class RunResult
     public function __construct(
         public Identifier $identifier,
         public Status $status,
-    ) {
-
-    }
+    ) {}
 
     /**
      * @param  array<string, mixed>  $state

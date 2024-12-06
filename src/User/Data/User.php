@@ -15,9 +15,7 @@ readonly class User
         public Proxy $proxy,
         public bool $isPaying,
         public string $organizationOwnerUserId
-    ) {
-
-    }
+    ) {}
 
     /**
      * @param  array<string, mixed>  $state

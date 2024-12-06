@@ -20,9 +20,7 @@ it('should return result for case', function (Identifier $identifier, array $exp
 it('should transform response to DTO', function () {
     $objet = new class([]) implements Item
     {
-        public function __construct(public array $state)
-        {
-        }
+        public function __construct(public array $state) {}
 
         public static function fromArray(array $state): static
         {

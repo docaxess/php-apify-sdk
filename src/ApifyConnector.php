@@ -12,9 +12,7 @@ use Saloon\Http\Connector;
 
 class ApifyConnector extends Connector
 {
-    public function __construct(public readonly string $token)
-    {
-    }
+    public function __construct(public readonly string $token) {}
 
     public function dataset(): DatasetResource
     {

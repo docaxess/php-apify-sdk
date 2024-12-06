@@ -10,8 +10,7 @@ class ErrorResult
         public int $httpCode,
         public string $message,
         public string $type
-    ) {
-    }
+    ) {}
 
     public static function make(int $httpCode, array $state): self
     {

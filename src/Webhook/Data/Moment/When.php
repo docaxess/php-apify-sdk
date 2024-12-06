@@ -11,9 +11,7 @@ class When
     public function __construct(
         public CarbonImmutable $startedAt,
         public ?CarbonImmutable $finishedAt,
-    ) {
-
-    }
+    ) {}
 
     public static function make(CarbonImmutable $createdAt, ?CarbonImmutable $finishedAt): self
     {

@@ -17,8 +17,7 @@ readonly class Identifier
         public AtomicIdentifier $defaultKeyValueStoreId,
         public AtomicIdentifier $defaultDatasetId,
         public AtomicIdentifier $defaultRequestQueueId,
-    ) {
-    }
+    ) {}
 
     public static function fromArray(array $data): self
     {

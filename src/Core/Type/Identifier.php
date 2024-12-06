@@ -6,10 +6,7 @@ namespace DocAxess\Apify\Core\Type;
 
 readonly class Identifier implements \JsonSerializable, \Stringable
 {
-    public function __construct(public string $id)
-    {
-
-    }
+    public function __construct(public string $id) {}
 
     public static function make(string $id): self
     {

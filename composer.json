@@ -9,8 +9,8 @@
         "citco/carbon": "^3.0"
     },
     "require-dev": {
-        "pestphp/pest": "^2.34",
-        "phpstan/phpstan": "^1.11",
+        "pestphp/pest": "^3.6.0",
+        "phpstan/phpstan": "^2.0.3",
         "laravel/pint": "^1.15",
         "symfony/var-dumper": "^7.0"
     },

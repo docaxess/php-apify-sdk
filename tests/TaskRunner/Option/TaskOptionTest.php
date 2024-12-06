@@ -31,7 +31,7 @@ it('should add a webhook to the task option', function () {
         ->and($option->webhooks)->toContain($config);
 });
 
-it('should throw an exception when adding an invalid webhook', fn () => new TaskOption('latest', 60, 256, [new stdClass()])
+it('should throw an exception when adding an invalid webhook', fn () => new TaskOption('latest', 60, 256, [new stdClass])
 )->throws(AssertionError::class);
 
 it('should convert the task option to a query string', fn (TaskOption $option, array $params, string $queryString) => expect($option->toParams())->toBe($params)

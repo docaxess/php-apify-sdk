@@ -12,6 +12,6 @@ class UserResource extends BaseResource
 {
     public function me(): User
     {
-        return $this->connector->send(new MeRequest())->dto();
+        return $this->connector->send(new MeRequest)->dto();
     }
 }

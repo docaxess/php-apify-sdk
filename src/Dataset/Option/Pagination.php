@@ -9,8 +9,7 @@ readonly class Pagination implements \JsonSerializable
     public function __construct(
         public ?int $limit,
         public ?int $offset,
-    ) {
-    }
+    ) {}
 
     public static function disabled(): self
     {
