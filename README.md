@@ -71,7 +71,7 @@ $actorId = 'YOUR_ACTOR_ID';
 $apify = new ApifyConnector('YOUR_APIFY_TOKEN');
 
 $config = new TaskOption();
-$config->addWebhook(WebhookConfig::forEvent(EventType::RUN_SUCCEEDED, 'https://your-webhook-url.com'));
+$config = $config->addWebhook(WebhookConfig::forEvent(EventType::RUN_SUCCEEDED, 'https://your-webhook-url.com'));
 
 $run = $apify->taskRunner()->run($actorId, $config);
 ```
