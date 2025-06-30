@@ -4,7 +4,9 @@ declare(strict_types=1);
 
 namespace DocAxess\Apify\Core;
 
-class ErrorResult
+use Stringable;
+
+readonly class ErrorResult implements Stringable
 {
     public function __construct(
         public int $httpCode,
@@ -12,6 +14,9 @@ class ErrorResult
         public string $type
     ) {}
 
+    /**
+     * @param  array{error: array{message: string, type: string}}  $state
+     */
     public static function make(int $httpCode, array $state): self
     {
         return new self(
@@ -28,6 +33,6 @@ class ErrorResult
 
     public function __toString(): string
     {
-        return "Error: {$this->message} ({$this->type}) with HTTP code: {$this->httpCode}";
+        return sprintf('Error: %s (%s) with HTTP code: %d', $this->message, $this->type, $this->httpCode);
     }
 }

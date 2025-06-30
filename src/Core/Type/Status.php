@@ -27,7 +27,8 @@ enum Status: string
                 return $case;
             }
         }
-        throw new InvalidArgumentException("Invalid status: $value");
+
+        throw new InvalidArgumentException('Invalid status: '.$value);
     }
 
     public function is(Status $status): bool

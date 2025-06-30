@@ -15,12 +15,16 @@ class DatasetResource extends BaseResource
 {
     /**
      * @param  class-string<Item>|null  $dtoType
+     * @return array<int, Item|array<string, mixed>>
      *
      * @throws FatalRequestException
      * @throws RequestException
      */
     public function getJson(Identifier $identifier, ?string $dtoType = null): array
     {
-        return $this->connector->send(DatasetRequest::getJson($identifier, $dtoType))->dto();
+        /** @var array<int, Item|array<string, mixed>> $result */
+        $result = $this->connector->send(DatasetRequest::getJson($identifier, $dtoType))->dto();
+
+        return $result;
     }
 }

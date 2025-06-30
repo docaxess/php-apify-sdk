@@ -18,7 +18,7 @@ readonly class Identifier implements \JsonSerializable, \Stringable
         return $this->id === (string) $id;
     }
 
-    public function __toString()
+    public function __toString(): string
     {
         return $this->id;
     }

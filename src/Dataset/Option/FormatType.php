@@ -26,7 +26,8 @@ enum FormatType: string
                 return $case;
             }
         }
-        throw new InvalidArgumentException("Unknown format type: $type");
+
+        throw new InvalidArgumentException('Unknown format type: '.$type);
     }
 
     public static function default(): self

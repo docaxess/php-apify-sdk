@@ -7,6 +7,7 @@ namespace DocAxess\Apify\Task\Request;
 use DocAxess\Apify\Core\ErrorResult;
 use DocAxess\Apify\Task\Data\Option\TaskOption;
 use DocAxess\Apify\Task\Data\Run\RunResult;
+use JsonException;
 use JsonSerializable;
 use Saloon\Contracts\Body\HasBody;
 use Saloon\Enums\Method;
@@ -22,23 +23,31 @@ class TaskRunRequest extends Request implements HasBody
 
     protected Method $method = Method::POST;
 
+    /**
+     * @param  array<string, mixed>|JsonSerializable  $payload
+     */
     public function __construct(
         public readonly string $actorTaskId,
         public readonly TaskOption $option,
         public readonly array|JsonSerializable $payload = [],
-    ) {
-        // when we have empty payload we want to send an empty json object, otherwise apify will reject the request
-        $this->body()->setJsonFlags(JSON_FORCE_OBJECT);
-    }
+    ) {}
 
-    public function defaultQuery(): array
+    protected function defaultQuery(): array
     {
         return $this->option->toParams();
     }
 
+    /**
+     * @return array<string, mixed>
+     */
     public function defaultBody(): array
     {
-        return is_array($this->payload) ? $this->payload : $this->payload->jsonSerialize();
+        if (is_array($this->payload)) {
+            return $this->payload;
+        }
+
+        /** @var array<string, mixed> */
+        return $this->payload->jsonSerialize();
     }
 
     public function resolveEndpoint(): string
@@ -46,12 +55,21 @@ class TaskRunRequest extends Request implements HasBody
         return sprintf('acts/%s/runs', $this->actorTaskId);
     }
 
+    /**
+     * @throws JsonException
+     */
     public function createDtoFromResponse(Response $response): ErrorResult|RunResult
     {
         if ($response->status() > 299) {
-            return ErrorResult::make($response->status(), $response->json());
+            /** @var array{error: array{message: string, type: string}} $errorData */
+            $errorData = $response->json();
+
+            return ErrorResult::make($response->status(), $errorData);
         }
 
-        return RunResult::make($response->json());
+        /** @var array<string, mixed> $json */
+        $json = $response->json();
+
+        return RunResult::make($json);
     }
 }

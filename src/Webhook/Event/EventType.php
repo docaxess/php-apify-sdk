@@ -31,6 +31,7 @@ enum EventType: string
                 return $case;
             }
         }
-        throw new InvalidArgumentException("Invalid event type: $value");
+
+        throw new InvalidArgumentException('Invalid event type: '.$value);
     }
 }

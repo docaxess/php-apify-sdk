@@ -7,6 +7,7 @@ namespace DocAxess\Apify\Dataset\Request;
 use DocAxess\Apify\Core\Type\Identifier;
 use DocAxess\Apify\Dataset\Item\Item;
 use DocAxess\Apify\Dataset\Option\DatasetOption;
+use JsonException;
 use Saloon\Enums\Method;
 use Saloon\Http\Request;
 use Saloon\Http\Response;
@@ -33,16 +34,40 @@ class DatasetRequest extends Request
         return sprintf('datasets/%s/items', $this->option->identifier);
     }
 
-    public function defaultQuery(): array
+    protected function defaultQuery(): array
     {
         return $this->option->toParams();
     }
 
+    /**
+     * @return array<int, Item|array<string, mixed>>
+     *
+     * @throws JsonException
+     */
     public function createDtoFromResponse(Response $response): array
     {
+        /** @var array<string, mixed> $data */
+        $data = $response->json();
+
+        if (! is_array($data)) {
+            return [];
+        }
+
+        /** @var array<int, array<string, mixed>> */
         return array_map(
-            fn (array $item) => is_null($this->option->dtoType) ? $item : $this->option->dtoType::fromArray($item),
-            $response->json()
+            function (mixed $item) {
+                if (is_null($this->option->dtoType)) {
+                    return is_array($item) ? $item : [];
+                }
+
+                if (! is_array($item)) {
+                    throw new JsonException('Expected array items from response');
+                }
+
+                /** @var array<string, mixed> $item */
+                return $this->option->dtoType::fromArray($item);
+            },
+            $data
         );
     }
 }

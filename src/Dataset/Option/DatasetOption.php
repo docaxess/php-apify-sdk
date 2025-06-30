@@ -44,6 +44,11 @@ readonly class DatasetOption implements \JsonSerializable
         return new self($identifier, $formatType, $pagination, $dtoType);
     }
 
+    /**
+     * Converts the current state into an array of parameters based on format and pagination settings.
+     *
+     * @return array<string, mixed> Associative array of parameters including conditional format and pagination data.
+     */
     public function toParams(): array
     {
         return [
@@ -53,6 +58,11 @@ readonly class DatasetOption implements \JsonSerializable
         ];
     }
 
+    /**
+     * Converts the object into a JSON serializable format.
+     *
+     * @return array<string, mixed> An associative array representing the serialized object.
+     */
     public function jsonSerialize(): array
     {
         return [

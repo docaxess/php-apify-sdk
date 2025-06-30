@@ -18,6 +18,7 @@ readonly class RunResult
      */
     public static function make(array $state): self
     {
+        /** @var array<string, string> $result */
         $result = $state['data'];
 
         return new self(

@@ -26,6 +26,9 @@ readonly class Pagination implements \JsonSerializable
         return $this->limit === null && $this->offset === null;
     }
 
+    /**
+     * @return array<string, int|null>
+     */
     public function jsonSerialize(): array
     {
         return [
