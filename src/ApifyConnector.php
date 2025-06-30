@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace DocAxess\Apify;
 
 use DocAxess\Apify\Dataset\Resource\DatasetResource;
+use DocAxess\Apify\KeyValueStore\Resource\KeyValueStoreResource;
 use DocAxess\Apify\Task\Resource\TaskRunnerResource;
 use DocAxess\Apify\User\Resource\UserResource;
 use Saloon\Http\Auth\TokenAuthenticator;
@@ -13,6 +14,11 @@ use Saloon\Http\Connector;
 class ApifyConnector extends Connector
 {
     public function __construct(public readonly string $token) {}
+
+    public function keyValueStore(): KeyValueStoreResource
+    {
+        return new KeyValueStoreResource($this);
+    }
 
     public function dataset(): DatasetResource
     {
