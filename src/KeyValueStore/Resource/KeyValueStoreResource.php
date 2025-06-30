@@ -45,8 +45,12 @@ class KeyValueStoreResource extends BaseResource
      */
     public function getBinaryRecords(Identifier $storeId, array $keys): array
     {
-        return array_map(function (string $key) use ($storeId) {
-            return $this->getBinaryRecord($storeId, $key);
-        }, $keys);
+        $result = [];
+
+        foreach ($keys as $key) {
+            $result[$key] = $this->getBinaryRecord($storeId, $key);
+        }
+
+        return $result;
     }
 }
